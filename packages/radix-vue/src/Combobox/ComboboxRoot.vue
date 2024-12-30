@@ -38,7 +38,7 @@ export const [injectComboboxRootContext, provideComboboxRootContext]
 
 export type ComboboxRootEmits<T = AcceptableValue> = {
   /** Event handler called when the value changes. */
-  'update:modelValue': [value: T]
+  'update:modelValue': [value: ArrayOrWrapped<T>]
   /** Event handler called when the open state of the combobox changes. */
   'update:open': [value: boolean]
   /** Event handler called when the searchTerm of the combobox changes. */
